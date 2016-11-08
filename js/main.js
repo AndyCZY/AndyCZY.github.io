@@ -1,237 +1,153 @@
-// 
+/*=========================================
 
-(function($,sr) {
-  // debouncing function from John Hann
-  // http://unscriptable.com/index.php/2009/03/20/debouncing-javascript-methods/
-  var debounce = function (func, threshold, execAsap) {
-    var timeout;
-    return function debounced () {
-      var obj = this, args = arguments;
-      function delayed () {
-        if (!execAsap)
-                          func.apply(obj, args);
-        timeout = null;
-      }
-      ;
-      if (timeout)
-                    clearTimeout(timeout); else if (execAsap)
-                    func.apply(obj, args);
-      timeout = setTimeout(delayed, threshold || 100);
-    }
-    ;
-  }
-  // smartresize 
-  jQuery.fn[sr] = function(fn) {
-    return fn ? this.bind('resize', debounce(fn)) : this.trigger(sr);
-  }
-  ;
-}
-)(jQuery,'smartresize');
+Template Name: Doffodil - One Page Personal Portfolio Template
+Author: ThemeLabBD
+Version: 1.0
+Design and Developed by: ThemeLabBD
 
-$(function() {
+NOTE: This is the custom jQuery file for the template
 
-    // Fix the Home Height
+=========================================*/
 
-    var setHomeBannerHeight = function(){
-	   var homeHeight= $(window).height();
-	   $('#overlay-1').height(homeHeight);
-    }
-    setHomeBannerHeight();
 
-    // Arrow drop effect
+/*******************************************
+        {  Table of contents  }
+********************************************
 
-    var $scrollDownArrow = $('.bottom > a');
+1. NiceScroll
+2. sticky menu
+3. jquery smooth scroll
+4. jquery scroll spy
+5. Bootstrap menu fix
+6. background-image flickering solution for mobile
+7. Magnific popup
 
-    // Smooth Scrolling and remove Hash tag from link
+********************************************
+        {  End table content }
+********************************************/
 
-    $('a[href*=#]:not([href=#])').click(function() {
-       
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-            if (target.length) {
-                $('html,body').animate({
-                    scrollTop: target.offset().top
-                }, 1000, function(){
-                  
-                });
-                return false;
+
+(function ($) {
+	"use strict";
+    
+    jQuery(document).ready(function($){
+        
+        
+         /*=============================
+                NiceScroll
+        ==============================*/
+          $("html").niceScroll({
+            scrollspeed: 80,
+            mousescrollstep: 40,
+            cursorwidth: 7,
+            cursorborder: 0,
+            cursorcolor: '#44B272',
+            autohidemode: true,
+            zindex: 999999999,
+            horizrailenabled: false,
+            cursorborderradius: 0 
+          });
+        
+        
+        
+        /*=============================
+            sticky menu
+        ===============================*/
+        var nav = $('.header-area');
+        var banner = $('.welcome-text');
+        var pos = nav.position();
+
+        $(window).scroll(function() {
+
+            var windowpos = $(window).scrollTop();
+
+            if (windowpos>=banner.outerHeight()) {
+                nav.addClass('fixedTop');
             }
-        }
-    });
+
+            else {
+                nav.removeClass('fixedTop');
+            }
+
+        });
 
 
-  ///////////////////////////////
-  // Center Home Slideshow Text
-  ///////////////////////////////
-  function centerHomeBannerText() {
-    var bannerText = jQuery('#header .middle');
-    var bannerTextTop = (jQuery('#header').actual('height')/2) - (jQuery('#header .middle').actual('height')/2) - 20;
-    bannerText.css('padding-top', bannerTextTop+'px');
-    bannerText.show();
-  }
-  centerHomeBannerText();
-
-
-
-    jQuery(window).smartresize(function() {
-        setHomeBannerHeight();
-        centerHomeBannerText();
+  
+        
+    /*================================
+        jquery smooth scroll
+    ==================================*/
+        $("li.smooth-scroll a, .wlcome-btn a.smooth-scroll, .logo a").on('click', function(event){
+    
+            var $anchor = $(this);
+            var headerH = '65';
+            $("html,body").stop().animate({
+                scrollTop : $($anchor.attr("href")).offset().top - headerH + "px"
+            },1200, 'easeInOutExpo');
+            
+            event.preventDefault();
+            
+            });
+        
+        
+        
+    /*======================================
+        jquery scroll spy
+    ========================================*/
+        $("body").scrollspy({
+        
+            target : ".navbar-collapse",
+            offset : 95
+        
+        });
+        
+        
+     /*=================================
+            Bootstrap menu fix
+     ==================================*/
+        $(".navbar-toggle").on("click", function(){
+        
+            $("body").addClass("mobile-menu-activated");
+        
+        });
+        
+        $("ul.nav.navbar-nav li a").on("click", function(){
+        
+            $(".navbar-collapse").removeClass("in");
+        
+        });
+        
+        
+        /*====================================================
+            background-image flickering solution for mobile
+            =======================================================*/
+             var bg = jQuery("#intro-bg");
+            function resizeBackground() {
+                bg.height(jQuery(window).height() + 60);
+            }
+            resizeBackground();
+        
+        
+        
+       
+       /*==================================
+                Magnific popup
+        =================================*/
+        $(".preview").magnificPopup({
+          type: 'image',
+            gallery:{
+                enabled:true
+            }
+            
+        });
+        
+     
+   
+        
     });
     
-});
-
-
-$( function() {
-  // init Isotope
-  var $container = $('.isotope').isotope({
-    itemSelector: '.element-item',
-    layoutMode: 'fitRows',
-    getSortData: {
-      name: '.name',
-      symbol: '.symbol',
-      number: '.number parseInt',
-      category: '[data-category]',
-      weight: function( itemElem ) {
-        var weight = $( itemElem ).find('.weight').text();
-        return parseFloat( weight.replace( /[\(\)]/g, '') );
-      }
-    }
-  });
-
-  // filter functions
-  var filterFns = {
-    // show if number is greater than 50
-    numberGreaterThan50: function() {
-      var number = $(this).find('.number').text();
-      return parseInt( number, 10 ) > 50;
-    },
-    // show if name ends with -ium
-    ium: function() {
-      var name = $(this).find('.name').text();
-      return name.match( /ium$/ );
-    }
-  };
-
-  // bind filter button click
-  $('#filters').on( 'click', 'button', function() {
-    var filterValue = $( this ).attr('data-filter');
-    // use filterFn if matches value
-    filterValue = filterFns[ filterValue ] || filterValue;
-    $container.isotope({ filter: filterValue });
-  });
-
-  // bind sort button click
-  $('#sorts').on( 'click', 'button', function() {
-    var sortByValue = $(this).attr('data-sort-by');
-    $container.isotope({ sortBy: sortByValue });
-  });
-  
-  // change is-checked class on buttons
-  $('.button-group').each( function( i, buttonGroup ) {
-    var $buttonGroup = $( buttonGroup );
-    $buttonGroup.on( 'click', 'button', function() {
-      $buttonGroup.find('.is-checked').removeClass('is-checked');
-      $( this ).addClass('is-checked');
-    });
-  });
-
-  
-});
-
-function countUpTo(count,selector,max)
-    {
-      console.log("count--> "+count);
-        var div_by = count,
-            speed = Math.round(count / div_by),
-            $display = selector,
-            run_count = 1,
-            int_speed = 24;
-
-        var int = setInterval(function() {
-            if(run_count < div_by){
-                $display.text(speed * run_count);
-                run_count++;
-            } else if(parseInt($display.text()) < count) {
-                var curr_count = parseInt($display.text()) + 1;
-                var text = "";
-                if(max>99){
-                     if(curr_count<10){
-                        text = text+"00"+curr_count;
-                    }
-                    /*else if(curr_count < 100 && curr_count >9){
-                        text = text+"0"+curr_count;
-                    }*/
-                    else{
-                      text = curr_count;
-                    }
-                }else if(max<100 && max>9){
-                     if(curr_count<10){
-                        text = text+"00"+curr_count;
-                    }
-                   /*else if(curr_count < 100 && curr_count >9){
-                        text = text+"0"+curr_count;
-                    }*/
-                    else{
-                      text = curr_count;
-                    }
-                }else{
-                      if(curr_count<10){
-                        text = text+"00"+curr_count;
-                    }
-                   /*else if(curr_count < 100 && curr_count >9){
-                        text = text+"0"+curr_count;
-                    }*/
-                    else{
-                      text = curr_count;
-                    }
-                }
-               
-                $display.text(text);
-            } else {
-                clearInterval(int);
-            }
-        }, int_speed);
-    }
-
-
-var firstTime = true;
-$(document).scroll(function(event) {
+    
 
 
 
-  var result = $('.count-timer').isOnScreen();
-
-  if(result == true) {
-      console.log("on screen");
-
-      if(firstTime){
-        firstTime = false;
-            
-          var count1 = $('.count1'),
-            count2 = $('.count2'),
-            count3 = $('.count3'),
-            count4 = $('.count4'),
-            count5 = $('.count5'),
-            count6 = $('.count6')
-            count1Num = count1.text(),
-            count2Num = count2.text(),
-            count3Num = count3.text(),
-            count4Num = count4.text(),
-            count5Num = count5.text(),
-            count6Num = count6.text();
-
-            var max = Math.max(parseInt(count1Num),parseInt(count2Num));
-            max = Math.max(max,parseInt(count6Num));
-            console.log(max);
-
-            countUpTo(count1Num,count1,max);
-            countUpTo(count2Num,count2,max);
-            countUpTo(count3Num,count3,max);
-            countUpTo(count4Num,count4,max);
-            countUpTo(count5Num,count5,max);
-            countUpTo(count6Num,count6,max);
-      }
-
-    }
-});
+}(jQuery));	

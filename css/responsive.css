@@ -1,0 +1,206 @@
+/**********************************************
+
+Template Name:  Daffodil - One page Personal Portfolio Template
+Author: ThemeLabBD
+Version: 1.0
+Design and Developed by: ThemeLabBD
+
+NOTE: This is responsive stylesheet of the template, This file contains the styling for various devices like mobile phone, tablet, laptop etc.
+
+*************************************************/
+
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) { 
+  
+    
+}
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+    
+.about-author{
+    margin-top: 60px;
+}
+.single-services {
+    margin-bottom: 60px;
+}
+.single-fact {
+    margin-bottom: 70px;
+
+} 
+.full-adress {
+    margin-top: 60px;
+    margin-left: 0px;
+}
+
+    
+    
+    
+}
+/* Mobile Layout lower than: 320px. */
+@media only screen and (max-width: 767px) { 
+    
+
+/* HEADER AREA */  
+.header-area{
+    padding: 12px 0;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    background: rgba(0, 0, 0, 0.9);
+}
+.logo a{
+    display: inline-block;
+    width: 60px;
+    margin-top: 0px;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.main-menu ul.navbar-nav {
+    float: left;
+}
+.main-menu ul.navbar-nav li a{
+    padding: 10px 5px;
+}
+.main-menu ul.nav.navbar-nav li.active:before{
+    display: none;
+}
+.navbar-collapse {
+  border-top: 1px solid transparent;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8) inset;
+  margin-top: 15px;
+}
+
+.header-area.fixedTop:before{
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+}
+.header-area.fixedTop .main-menu ul.navbar-nav li a{
+   
+}
+.header-area.fixedTop .main-menu ul.navbar-nav li a{padding: 10px 5px;}
+.header-area.fixedTop .navbar-collapse {
+  border-top: 1px solid transparent;
+  box-shadow: 0 1px 0 rgba(68, 178, 114, 0.8) inset;
+  margin-top: 15px;
+}
+.header-area.fixedTop .navbar-toggle{
+    float: none;
+    margin: 0;
+    border-color: #000;
+    padding: 9px;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+    .header-area.fixedTop .navbar-toggle .icon-bar {
+  background: none repeat scroll 0 0 #000;
+}
+    .navbar-toggle {
+    float: none;
+    margin: 0;
+    border-color: #fff;
+    padding: 9px;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+    .navbar-toggle .icon-bar {
+  background: none repeat scroll 0 0 #fff;
+}
+.navbar-header {
+    display: inline-block;
+    float: right;
+    margin-top: 10px;
+}
+.mobile-menu-activated ul.nav.navbar-nav{}
+.mobile-menu-activated ul.nav.navbar-nav li{display: block;text-align: left;}
+.mobile-menu-activated ul.nav.navbar-nav li a{}
+.main-menu ul.navbar-nav{
+    text-align: left !important;
+    display: block;
+}
+    
+    
+    
+/* WELCOME AREA */
+.welcome-text h1 {
+  font-size: 32px;
+}
+ .welcome-text h1 span {
+  display: block;
+}
+.welcome-text h3 {
+  font-size: 22px;
+}
+.wlcome-btn a {
+  padding: 10px 24px;
+}
+     
+  
+/* ABOUT SECTION */
+.author-image {
+    margin-bottom: 0px;
+}
+.section-padding{
+    padding:  80px 0px;
+}
+.about-author {
+    padding: 0;
+    margin-top: 60px;
+}
+    
+/* services section */
+    .single-services {
+  margin-bottom: 60px;
+}
+    .single-fact {
+  margin-bottom: 60px;
+}
+
+
+    
+/* CONTACT INFO SECTION */
+form input[type="submit"] {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 14px 28px;
+  width: 100%;
+}
+    
+    .full-adress {
+  margin-top: 60px;
+    margin-left: 0px;
+}
+    
+
+/* FOOTER SECTION */
+.footer{
+    padding: 10px 0;
+}
+.footer-text P{
+    font-size: 12px;
+    }
+    
+    
+}
+
+
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) { 
+    
+.mobile-menu-activated ul.nav.navbar-nav li a{padding: 10px 5px;}
+    
+.welcome-text h1 {
+    font-size: 55px;
+}
+    .welcome-text h1 span {
+  display: inline-block;
+}
+.welcome-text h3 {
+    font-size: 28px;
+}
+.wlcome-btn a {
+  padding: 12px 27px;
+}
+
+    
+}
+

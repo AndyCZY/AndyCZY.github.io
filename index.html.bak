@@ -5,9 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		
-		<!--authorÔºöDoffodil-->
-		<!--authorÔºöÈôàÈÉëÊ∏∏-->
-        <title>ÈôàÈÉëÊ∏∏-‰∏™‰∫∫ÁΩëÁ´ô</title>
+		<!--◊˜’ﬂ£∫Doffodil-->
+        <title>≥¬÷£”Œ-∏ˆ»ÀÕ¯’æ</title>
         
         
         <!--==== CSS ====-->
@@ -52,7 +51,7 @@
         <!--=====****************** INTRO SECTION ****************************=====-->
         <div class="intro-section" id="intro-bg">
         
-			<!--=====  HEADER AREA =====-->
+			<!--===== µº∫ΩÃı HEADER AREA =====-->
             <header class="header-area">
                 <div class="container">
                     <div class="row">
@@ -66,21 +65,21 @@
                                         <span class="icon-bar"></span>
                                     </button>
                                 </div>
-								<!--== logo Daffodil.==-->
-                                <a href="#home">Czy</a> 
+								<!--== logo ==-->
+                                <a href="#home">Daffodil.</a> 
                             </div>
                         </div>
                         <div class="col-md-10 col-sm-10 col-xs-12">
                            <nav class="main-menu">
                             <div class="navbar-collapse collapse">
                                 <ul class="nav navbar-nav"> 
-									<!--== ËèúÂçï ==-->
+									<!--== ÷˜≤Àµ• ==-->
 									<!--== Home About service portfolio contact==-->
-                                    <li class="active smooth-scroll"><a href="#home">‰∏ª È°µ</a></li>
-                                    <li class="smooth-scroll"><a href="#about">ÂÖ≥ ‰∫é</a></li>
-                                    <li class="smooth-scroll"><a href="#services">Êúç Âä°</a></li>
-                                    <li class="smooth-scroll"><a href="#portfolio">ÁÖß Áâá</a></li>
-                                    <li class="smooth-scroll"><a href="#contact-info">ËÅî Á≥ª</a></li>
+                                    <li class="active smooth-scroll"><a href="#home">÷˜ “≥</a></li>
+                                    <li class="smooth-scroll"><a href="#about">πÿ ”⁄</a></li>
+                                    <li class="smooth-scroll"><a href="#services">∑˛ ŒÒ</a></li>
+                                    <li class="smooth-scroll"><a href="#portfolio">’’ ∆¨</a></li>
+                                    <li class="smooth-scroll"><a href="#contact-info">¡™ œµ</a></li>
                                 </ul>
                             </div>
                             </nav>
@@ -89,10 +88,10 @@
                    
                 </div>
             </header>
-        <!--=====  END HEADER AREA ======-->
+        <!--===== µº∫ΩÃı END HEADER AREA ======-->
              
              
-        <!--======= Ê¨¢ËøéÈ°µ WELCOME AREA =======-->
+        <!--======= ª∂”≠“≥ WELCOME AREA =======-->
             <div class="welcome-area">
                <div class="welcome-table">
                    <div class="welcome-cell">
@@ -100,15 +99,10 @@
                             <div class="row">
                                 <div class="col-md-12 col-sm-12 col-xs-12">
                                     <div class="welcome-text">
-                                        <!-- Full stack web developer -->
-                                        <h1 class="wow fadeInDown animated" data-wow-duration="1.2s" data-wow-delay="1.0s">Â∏¶ ‰∏ä Ê¢¶ ÊÉ≥ Áîü Ê¥ª</h1>
-                                        <h3 class="wow fadeInDown animated" data-wow-duration="1.2s" data-wow-delay="1.0s">JavaWeb Developer</h3>
-                                        <!-- I am <span>David willey</span> -->
-                                        <h1 class="wow fadeInDown animated" data-wow-duration="1.2s" data-wow-delay="0.5s">I am <span>Chen Zheng You</span></h1>
-                                        
+                                        <h1 class="wow fadeInDown animated" data-wow-duration="1.2s" data-wow-delay="0.5s">I am <span>David willey</span></h1>
+                                        <h3 class="wow fadeInDown animated" data-wow-duration="1.2s" data-wow-delay="1.0s">Full stack web developer</h3>
                                         <div class="wlcome-btn wow fadeIn animated" data-wow-duration="1.2s" data-wow-delay="1.5s">
-                                        	<!-- view profile -->
-                                            <a href="#about" class="smooth-scroll">Êü•ÁúãÊàëËµÑÊñô</a>
+                                            <a href="#about" class="smooth-scroll">view profile</a>
                                         </div>
                                     </div>
                                 </div>
@@ -117,21 +111,21 @@
                     </div>
                 </div>
             </div>
-            <!--===== Ê¨¢ËøéÈ°µ END WELCOME AREA =====-->
+            <!--===== ª∂”≠“≥ END WELCOME AREA =====-->
             
         </div>
         <!--=====***************** END INTRO SECTION ***********************=====-->
         
         
         
-        <!--=====**************  ABOUT SECTION ***************=====-->
+        <!--=====************** πÿ”⁄“≥ ABOUT SECTION ***************=====-->
         <section id="about" class="about-section section-padding">
             <div class="container">
                 <div class="row">
                     <div class="wow fadeInUp col-md-3 col-sm-12 col-xs-12 animated" data-wow-duration="1.5s" data-wow-delay="0.4s">
                         <div class="author-image">
-                            <img src="images/author-1.jpg" alt="Author Image"> <!--=== author image ===-->
-                            <h2>ÈôàÈÉëÊ∏∏</h2>
+                            <img src="images/author.jpg" alt="Author Image"> <!--=== author image ===-->
+                            <h2>≥¬÷£”Œ</h2>
                         </div>
 						<!--=== author social icons ===-->
                         <div class="social-icon"> 
@@ -155,11 +149,11 @@
                 
             </div>
         </section>
-        <!--=====***********  END ABOUT SECTION **************=====-->
+        <!--=====*********** πÿ”⁄“≥ END ABOUT SECTION **************=====-->
         
         
         
-        <!--======****************  SERVICES SECTION ******************=======-->
+        <!--======**************** ∑˛ŒÒ“≥ SERVICES SECTION ******************=======-->
         <section id="services" class="services-section section-padding">
             <div class="container">
                <div class="row">
@@ -210,11 +204,11 @@
                 </div>
             </div>
         </section>
-        <!--======***************  END SERVICES SECTION ****************=======-->
+        <!--======*************** ∑˛ŒÒ“≥ END SERVICES SECTION ****************=======-->
         
         
         
-        <!--======***************  FACTS ****************=======-->
+        <!--======*************** ººƒ‹“≥ FACTS ****************=======-->
          <div class="facts">
             <div class="container">
                 <div class="row">     
@@ -246,11 +240,11 @@
              </div>
             </div>
         
-         <!--======***************  END FACTS ****************=======-->
+         <!--======*************** ººƒ‹“≥ END FACTS ****************=======-->
         
         
         
-        <!--======**********  PORTFOLIO SECTION *********======-->
+        <!--======********** ’’∆¨“≥ PORTFOLIO SECTION *********======-->
         <section id="portfolio" class="section-padding">
         <div class="container">
             <div class="row">
@@ -385,18 +379,18 @@
             </div><!--/.row-->
         </div><!--/.container-->
     </section>
-    <!--======************  END PORTFOLIO SECTION **************======-->
+    <!--======************ ’’∆¨“≥ END PORTFOLIO SECTION **************======-->
       
       
         
-        <!--======********************  CONTACT INFO SECTION **********************======-->
+        <!--======******************** ¡™œµ“≥ CONTACT INFO SECTION **********************======-->
         <section id="contact-info" class="contact-info-section section-padding">
             <div class="container">
              
              <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12">
                       <div class="section-title">
-                       <h2>Contact</h2>
+                       <h2>¡™œµ</h2>
                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
                        </div>
                    </div>
@@ -442,21 +436,20 @@
                     </div>
                     <div class="wow fadeIn col-md-4 col-sm-12 col-xs-12 animated" data-wow-duration="1.5s" data-wow-delay="0.4s">
                         <div class="full-adress">
-                        <h3>Êõ¥Â§ö‰ø°ÊÅØ</h3>
-                        <p class="phone">Phone: <a href="tel:+444123456">+18789091433</a></p>
-                        <p class="mail">Email: <a href="mailto:willey@yourdomain.com">chenzyou@163.com</a></p>
-                        <!--  <p class="adress">Now living in:Shan Dong<br>266300 hello word<br>Hometown:Hainan Sanya, China</p> -->
-                        <p class="adress">Áé∞Â±ÖÔºöÂ±±‰∏ú-ÈùíÂ≤õ<br><br>ÊïÖ‰π°ÔºöÊµ∑Âçó-‰∏â‰∫ö</p>
+                        <h3>More Info</h3>
+                        <p class="phone">Phone: <a href="tel:+444123456">+44 4123456</a></p>
+                        <p class="mail">Email: <a href="mailto:willey@yourdomain.com">willey@yourdomain.com</a></p>
+                        <p class="adress">Bak-One Company<br>12345 Hollywood Bvld Street<br> Los Angeles, California</p>
                     </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!--======****************  END CONTACT INFO SECTION ********************======-->
+        <!--======**************** ¡™œµ“≥ END CONTACT INFO SECTION ********************======-->
         
         
         
-        <!--======*******************  FOOTER SECTION ******************======-->
+        <!--======******************* øÚŒ≤ FOOTER SECTION ******************======-->
         <footer class="footer">
             <div class="container">
                 <div class="row">
@@ -468,7 +461,7 @@
                 </div>
             </div>
         </footer>
-        <!--======*******************  END FOOTER SECTION ***************======-->
+        <!--======******************* øÚŒ≤ END FOOTER SECTION ***************======-->
         
         
         
