@@ -1,4 +1,4 @@
-# 陈郑游的简历：Java-Linux-分布式-微服务-博主-GitHub-Gitbook
+### 陈郑游的简历：Java-Linux-分布式-微服务-博主-GitHub-Gitbook
 [[博客地址]](http://blog.csdn.net/javawebrookie "我的博客")
 [[GitHub地址]](https://github.com/AndyCZY/ "我的GitHub")
 [[GitBook地址]](https://www.gitbook.com/@chenzhengyou "我的开源书")
