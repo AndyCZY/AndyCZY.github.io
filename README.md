@@ -22,21 +22,21 @@
 
 
 #### 专业技能
- 
-    熟悉Java编程，了解JVM（博文访问量2000+），具有良好的编码风格；
-    熟悉J2EE规范下的JSP，Servlet，JDBC，JavaBean编程，熟悉Http协议；
+    熟悉Java编程，了解JVM，熟悉Http协议，具有良好的编码风格；
+    熟悉J2EE规范下的JSP，Servlet，JDBC，JavaBean编程；
     熟悉Spring，SpringMVC，MyBatis框架下MVC模式应用开发；
     掌握Unix/Linux系统下vim编辑器和Shell脚本的使用；
     掌握Redis集群搭建，及其Redis集群版的Java接口应用；
     掌握Solr集群搭建，及其Solr集群版的Java接口应用；
     掌握Nginx的虚拟主机，反向代理，负载均衡配置与使用；
     掌握Zookeeper的使用，了解它的原理及其实现方式；
+    掌握MySql，熟练使用sql语句，熟悉JavaScript，Ajax的使用；
     熟悉应用服务器软件Tomcat等容器配置和部署；
-    熟练使用IDEA，Git，Maven工具进行Java软件开发；
-    掌握MySql，熟练使用sql语句，掌握JavaScript，Ajax的使用；
+    熟练使用IDEA，Maven，GitHub，Markdown工具；
     对分布式有一定了解，曾有博文被推到CSDN首页（博文访问量9000+）；
-    对spring boot 和spring cloud有一定的理论知识；
-    会使用GitHub托管项目、是CSDN博主（已有2年总访问量60000+）；
+    对SpringBoot和SpringCloud微服务架构有一定的理论知识；
+    您可以去访问我的GitBook或者GitHub，CSDN博主（已有2年总访问量60000+）；
+    
 
 
 
