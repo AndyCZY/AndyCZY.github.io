@@ -34,7 +34,7 @@ body a:hover{
     -moz-background-size: cover;
     -o-background-size: cover;
     -ms-background-size: cover;
-    min-height:100px;
+    min-height:80px;
 }
 .navbar-default {
     background: none;
