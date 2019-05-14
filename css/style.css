@@ -25,7 +25,7 @@ body a:hover{
     -moz-background-size: cover;
     -o-background-size: cover;
     -ms-background-size: cover;
-    min-height:700px;
+    min-height:300px;
 }
 .banner1{
 	background: url(../images/banner1.jpg) no-repeat 0px 0px;
@@ -34,7 +34,7 @@ body a:hover{
     -moz-background-size: cover;
     -o-background-size: cover;
     -ms-background-size: cover;
-    min-height:300px;
+    min-height:100px;
 }
 .navbar-default {
     background: none;
